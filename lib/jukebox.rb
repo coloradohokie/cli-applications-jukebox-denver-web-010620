@@ -13,6 +13,7 @@ def list(song_list)
 end
 
 def play(song_list)
+  match_found = nil
   puts "Please enter a song name or number:"
   input = gets.strip
   song_list.each_with_index do |v,i|
