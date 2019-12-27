@@ -18,7 +18,7 @@ def play(song_list)
   puts "Please enter a song name or number:"
   input = gets.strip
   song_list.each_with_index do |v,i|
-    if input == (v || i)
+    if input == (v || (i-1))
       puts "Playing #{v}"
       match_found = true
     end #if
