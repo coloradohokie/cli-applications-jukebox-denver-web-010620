@@ -37,7 +37,12 @@ def run(song_list)
   case input
   when "list"
     list(song_list)
-  when "exit"  
+  when "exit"
+    exit_jukebox
+  when "play"
+    play(song_list)
+  when "help"
+    help
   end
 
   
